@@ -1,0 +1,38 @@
+.tasks {
+    background: #24262C;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.tasks-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.status-label {
+    color: #FFFFFF80;
+    font-size: 14px;
+}
+
+.task-adder {
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.plus-symbol {
+    display: flex;
+    color: #FFFFFF80;
+    width: 18px;
+    height: 18px;
+    background: #FFFFFF1A;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.new-task-label {
+    color: #FFF;
+}
