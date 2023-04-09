@@ -1,0 +1,55 @@
+.views-top-bar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #FFFFFF1A;
+    padding: 0 20px 12px 20px;
+    margin: 0 20px 20px 20px;
+}
+
+.views {
+    display: flex;
+    align-items: center;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.todo-view-options {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.view, .filter, .more-options-button, .new-template {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.sort {
+    color: #FFFFFF80;
+    cursor: pointer;
+}
+
+.more-options-button {
+    box-sizing: border-box;
+    display: flex;
+    width: 26px;
+    height: 26px;
+    border: 3px solid #FFFFFF1A;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.more-options-button > svg {
+    margin: 1px;
+}
+
+.new-template {
+    background-color: #4B69FF;
+    padding: 12px 24px;
+    border-radius: 1000000px;
+}

@@ -1,8 +1,13 @@
+import SideBar from "./container/SideBar/SideBar.jsx";
+import MainContent from "./container/MainContent/MainContent.jsx";
+import './App.css';
+
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+  <>
+    <SideBar />
+    <MainContent />
+  </>
   )
 }
 
