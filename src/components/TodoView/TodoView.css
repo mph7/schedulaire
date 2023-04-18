@@ -1,6 +1,5 @@
 .todo-view {
-    display: grid;
+    display: flex;
+    gap: 22px;
     margin: 0 32px 32px 32px;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 22px;
 }

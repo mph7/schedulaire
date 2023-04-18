@@ -9,13 +9,22 @@ function calculateHueRotate(taskActual, taskTotal) {
   return `hue-rotate(${taskActual / taskTotal * 100}deg)`;
 }
 
-function Task() {
+const monthNames = [ 'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December' ];
+
+function formatDate(match, p1, p2, p3) {
+  const newDate = new Date(match);
+  const monthName = monthNames[newDate.getMonth()];
+  return `${p3} ${monthName} ${p1}`;
+}
+
+function Task({ taskName, project, dueDate }) {
   return (
     <div className="task-card">
       <div className="task-top">
         <div>
-          <p className="task-title">Design new ui presentation</p>
-          <p className="task-project">Oreo website project</p>
+          <p className="task-title">{taskName}</p>
+          <p className="task-project">{project}</p>
         </div>
         <button className="more-options-button">
           <svg width="2" height="2" viewBox="0 0 2 2" fill="none"
@@ -55,7 +64,8 @@ function Task() {
         </div>
       </div>
       <div>
-        <span className="task-date">09 April 2023</span>
+        <span
+          className="task-date">{dueDate.replace(/^(\d{4})-(\d{2})-(\d{2})/, formatDate)}</span>
       </div>
     </div>
   );

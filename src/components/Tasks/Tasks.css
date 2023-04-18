@@ -2,6 +2,9 @@
     background: #24262C;
     border-radius: 12px;
     padding: 16px;
+    height: 100%;
+    width: 100%;
+
 }
 
 .tasks-top {
@@ -35,4 +38,10 @@
 
 .new-task-label {
     color: #FFF;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
